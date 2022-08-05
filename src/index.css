@@ -11,3 +11,133 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  width: calc(100% - 80px - 152px);
+  padding: 80px 152px 0px 80px;
+}
+
+.title {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 125%;
+  color: #16145A;
+}
+
+.company-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.table {
+  border: 1px solid #E7E7ED;
+}
+
+.table-header-cell {
+  width: 139px;
+  height: 24px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.typography {
+  font-family: 'Source Sans Pro';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.description {
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.price {
+  font-family: Source Sans Pro;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.23999999463558197px;
+  text-align: right;
+
+}
+
+.font-bold {
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.font-light {
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.card {
+  width: calc(100% - 48px);
+  padding: 16px 24px;
+  border: 1px solid #CDCED9;
+  border-radius: 10px;
+  height: 161px;
+}
+
+.mobile-device {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .table {
+    display: none;
+  }
+
+  .mobile-device {
+    display: block;
+  }
+
+  .container {
+    width: calc(100% - 32px);
+    padding: 80px 16px 0px 16px;
+  }
+}
