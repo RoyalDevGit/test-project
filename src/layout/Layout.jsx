@@ -3,12 +3,17 @@ import axios from "axios";
 import Row from "../components/Row";
 import Card from "../components/Card";
 
+export const apiCall = async () => {
+  const response = await axios.get("https://idme-interview.herokuapp.com");
+  return response;
+};
+
 export default function Layout() {
   const [data, setData] = React.useState([]);
 
   const getData = async () => {
-    const data = await axios.get("https://idme-interview.herokuapp.com");
-    setData(data.data);
+    const response = await apiCall();
+    if (response) setData(response.data.slice(0, 4));
   };
 
   React.useEffect(() => {
@@ -17,23 +22,29 @@ export default function Layout() {
 
   return (
     <section className="container">
-      <div className="title">Purchase</div>
-      <div className="table">
-        <div className="row">
-          <div style={{ width: "48px", height: "48px" }}></div>
-          <div className="table-header-cell">Name</div>
-          <div className="table-header-cell">Location</div>
-          <div className="table-header-cell">Purchase Date</div>
-          <div className="table-header-cell">Category</div>
-          <div className="table-header-cell">Description</div>
-          <div className="table-header-cell">Price</div>
-          <div style={{ width: "48px", height: "48px" }}></div>
-        </div>
-        {data.map((datum, index) => {
-          return <Row {...datum} key={index}></Row>;
-        })}
+      <div className="title" id="Purchases">
+        Purchases
       </div>
-      <div className="mobile-device">
+      <table className="table" data-testid="laptop-view">
+        <thead>
+          <tr className="header">
+            <th className="margin-cell"></th>
+            <th className="table-header-cell">Name</th>
+            <th className="table-header-cell">Location</th>
+            <th className="table-header-cell">Purchase Date</th>
+            <th className="table-header-cell category-header">Category</th>
+            <th className="table-header-cell">Description</th>
+            <th className="table-header-cell">Price</th>
+            <th className="margin-cell"></th>
+          </tr>
+        </thead>
+        <tbody className="table-body">
+          {data.map((datum, index) => {
+            return <Row {...datum} key={index}></Row>;
+          })}
+        </tbody>
+      </table>
+      <div className="mobile-device" data-testid="mobile-view">
         {data.map((datum, index) => {
           return <Card {...datum} key={index}></Card>;
         })}

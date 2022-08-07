@@ -1,0 +1,261 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering on the different mobile renders correctly on the mobile 1`] = `
+<section
+  className="container"
+>
+  <div
+    className="title"
+    id="Purchases"
+  >
+    Purchases
+  </div>
+  <table
+    className="table"
+  >
+    <thead>
+      <tr
+        className="header"
+      >
+        <th
+          className="margin-cell"
+        />
+        <th
+          className="table-header-cell"
+        >
+          Name
+        </th>
+        <th
+          className="table-header-cell"
+        >
+          Location
+        </th>
+        <th
+          className="table-header-cell"
+        >
+          Purchase Date
+        </th>
+        <th
+          className="table-header-cell category-header"
+        >
+          Category
+        </th>
+        <th
+          className="table-header-cell"
+        >
+          Description
+        </th>
+        <th
+          className="table-header-cell"
+        >
+          Price
+        </th>
+        <th
+          className="margin-cell"
+        />
+      </tr>
+    </thead>
+    <tbody
+      className="table-body"
+    />
+  </table>
+  <div
+    className="mobile-device"
+  />
+</section>
+`;
+
+exports[`rendering on the different viewports renders correctly on the laptop 1`] = `
+<section
+  className="container"
+>
+  <div
+    className="title"
+    id="Purchases"
+  >
+    Purchases
+  </div>
+  <table
+    className="table"
+  >
+    <thead>
+      <tr
+        className="header"
+      >
+        <th
+          className="margin-cell"
+        />
+        <th
+          className="table-header-cell"
+        >
+          Name
+        </th>
+        <th
+          className="table-header-cell"
+        >
+          Location
+        </th>
+        <th
+          className="table-header-cell"
+        >
+          Purchase Date
+        </th>
+        <th
+          className="table-header-cell category-header"
+        >
+          Category
+        </th>
+        <th
+          className="table-header-cell"
+        >
+          Description
+        </th>
+        <th
+          className="table-header-cell"
+        >
+          Price
+        </th>
+        <th
+          className="margin-cell"
+        />
+      </tr>
+    </thead>
+    <tbody
+      className="table-body"
+    />
+  </table>
+  <div
+    className="mobile-device"
+  />
+</section>
+`;
+
+exports[`rendering on the different viewports renders correctly on the mobile 1`] = `
+<section
+  className="container"
+>
+  <div
+    className="title"
+    id="Purchases"
+  >
+    Purchases
+  </div>
+  <table
+    className="table"
+  >
+    <thead>
+      <tr
+        className="header"
+      >
+        <th
+          className="margin-cell"
+        />
+        <th
+          className="table-header-cell"
+        >
+          Name
+        </th>
+        <th
+          className="table-header-cell"
+        >
+          Location
+        </th>
+        <th
+          className="table-header-cell"
+        >
+          Purchase Date
+        </th>
+        <th
+          className="table-header-cell category-header"
+        >
+          Category
+        </th>
+        <th
+          className="table-header-cell"
+        >
+          Description
+        </th>
+        <th
+          className="table-header-cell"
+        >
+          Price
+        </th>
+        <th
+          className="margin-cell"
+        />
+      </tr>
+    </thead>
+    <tbody
+      className="table-body"
+    />
+  </table>
+  <div
+    className="mobile-device"
+  />
+</section>
+`;
+
+exports[`renders correctly 1`] = `
+<section
+  className="container"
+>
+  <div
+    className="title"
+    id="Purchases"
+  >
+    Purchases
+  </div>
+  <table
+    className="table"
+  >
+    <thead>
+      <tr
+        className="header"
+      >
+        <th
+          className="margin-cell"
+        />
+        <th
+          className="table-header-cell"
+        >
+          Name
+        </th>
+        <th
+          className="table-header-cell"
+        >
+          Location
+        </th>
+        <th
+          className="table-header-cell"
+        >
+          Purchase Date
+        </th>
+        <th
+          className="table-header-cell category-header"
+        >
+          Category
+        </th>
+        <th
+          className="table-header-cell"
+        >
+          Description
+        </th>
+        <th
+          className="table-header-cell"
+        >
+          Price
+        </th>
+        <th
+          className="margin-cell"
+        />
+      </tr>
+    </thead>
+    <tbody
+      className="table-body"
+    />
+  </table>
+  <div
+    className="mobile-device"
+  />
+</section>
+`;

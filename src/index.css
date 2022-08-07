@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro'), url(./fonts/SourceSansPro-Regular.ttf);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -17,13 +22,40 @@ code {
   padding: 80px 152px 0px 80px;
 }
 
+.header {
+  box-shadow: inset 0px -1px 0px #E7E7ED;
+}
+
 .title {
-  font-family: 'Source Sans Pro';
+  width: 181px;
+  height: 50px;
+
+  font-family: Source Sans Pro;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 125%;
+
+  display: flex;
+  align-items: center;
+
+  padding-bottom: 20px;
+
   color: #16145A;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.date-cell {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+
+  padding-top: 21.5px;
+  padding-left: 10px;
 }
 
 .company-avatar {
@@ -34,23 +66,106 @@ code {
 
 .table {
   border: 1px solid #E7E7ED;
+  padding: 154, 80, 346, 152;
+
+  width: calc(100%);
+  height: 568px;
+  border-radius: 4px;
 }
 
 .table-header-cell {
+  font-family: Source Sans Pro;
+  font-weight: 600;
   width: 139px;
   height: 24px;
   padding: 12px;
-  display: flex;
-  align-items: center;
+  text-align: left;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
+.table-body {
+  vertical-align: top;
+}
+
+.margin-cell {
+  width: 80px;
+}
+
+.name-cell {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  padding-top: 20px;
+  padding-left: 12px;
+  padding-right: 12px;
+  color: #272833;
+}
+
+.img-cell {
+  padding-top: 12px;
+  padding-left: 12px;
+}
+
+.category-header {
+  text-align: center;
+}
+
+.category-cell {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 150%;
+  /* identical to box height, or 18px */
+
+  padding: 3px 12px;
+  margin: 23px 3px;
+  display: inline-block;
+  justify-content: center;
+  border-radius: 2px;
+
+  border: 1px solid #000000;
+}
+
+.category-Technology {
+  border: 1px solid #CDCED9;
+  color: #000000
+}
+
+.category-Footwear {
+  border: 1px solid #118632;
+  color: #98D4A9
+}
+
+.category-Food {
+  border: 1px solid #D94130;
+  color: #FF8577
+}
+
+.category-Travel {
+  border: 1px solid #2E5AAC;
+  color: #89A7E0
+}
+
+.description-cell {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+
+  padding: 12px;
+
+  color: #272833;
+}
+
+table>tr {
+  vertical-align: top;
 }
 
 .typography {
-  font-family: 'Source Sans Pro';
+  font-family: Source Sans Pro;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -70,9 +185,15 @@ code {
   font-family: Source Sans Pro;
   font-size: 14px;
   font-weight: 400;
-  line-height: 21px;
-  letter-spacing: 0em;
+  line-height: 150%;
+  font-style: normal;
   text-align: left;
+
+  width: 80%;
+  color: #272833;
+
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .price {
@@ -80,27 +201,51 @@ code {
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
-  letter-spacing: -0.23999999463558197px;
   text-align: right;
+}
 
+.price-text {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 15px;
+
+  align-items: center;
+  font-feature-settings: 'tnum'
+}
+
+.ellipsis-cell {
+  text-align: center;
+  padding-top: 12px;
+}
+
+.ellipsis-span {
+  font-size: 23px;
+  font-weight: bold;
 }
 
 .font-bold {
   font-family: Source Sans Pro;
   font-size: 16px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 15px;
   letter-spacing: 0em;
   text-align: left;
 }
 
 .font-light {
-  font-family: Source Sans Pro;
-  font-size: 16px;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
+  font-size: 16px;
+  line-height: 20px;
+  /* or 125% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.24px;
+  font-feature-settings: 'tnum'
 }
 
 .flex {
@@ -118,16 +263,41 @@ code {
 .card {
   width: calc(100% - 48px);
   padding: 16px 24px;
+  margin-bottom: 9px;
   border: 1px solid #CDCED9;
   border-radius: 10px;
-  height: 161px;
 }
 
 .mobile-device {
   display: none;
 }
 
-@media (max-width: 1024px) {
+.row {
+  display: inline-flex;
+}
+
+.name-card {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+
+  display: flex;
+  padding-left: 10px;
+  position: relative;
+
+  color: #232326;
+}
+
+.right {
+  position: absolute;
+  text-align: right;
+  width: 15%;
+  right: 40px;
+}
+
+@media (max-width: 600px) {
   .table {
     display: none;
   }
@@ -136,8 +306,30 @@ code {
     display: block;
   }
 
+  .title {
+    height: 28px;
+    left: 15px;
+    right: 15px;
+    top: 22px;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 28px;
+    /* identical to box height, or 88% */
+    letter-spacing: 0.35px;
+
+    color: #272833;
+  }
+
+  .company-avatar {
+    width: 30px;
+    height: 30px;
+  }
+
   .container {
     width: calc(100% - 32px);
-    padding: 80px 16px 0px 16px;
+    padding: 68px 16px 0px 16px;
   }
 }
