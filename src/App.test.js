@@ -22,7 +22,7 @@ describe('mock api call', () => {
 
 describe('rendering on the different viewports', () => {
   // test on the laptop
-  it('renders correctly on the laptop', () => {
+  it('laptop view', () => {
     window.innerWidth = 1200;
     render(<App />);
     expect(screen.queryByTestId('laptop-view')).toHaveStyle({ display: 'table' });
@@ -30,16 +30,10 @@ describe('rendering on the different viewports', () => {
   })
 
   // test on the mobile
-  it('renders correctly on the mobile', () => {
+  it('mobile view', () => {
     window.innerWidth = 500;
     render(<App />);
     expect(screen.queryByTestId('laptop-view')).toHaveStyle({ display: 'table' });
     expect(screen.queryByTestId('mobile-view')).toHaveStyle({ display: 'block' });
   })
 })
-
-
-
-
-
-

@@ -32,19 +32,24 @@ export default function Card({
       oldString[0],
       oldString[0].toUpperCase()
     );
-    return firstCapital.replace("&#x27;", "'");
+    return firstCapital.replaceAll("&#x27;", "'");
   };
 
   return (
     <div className="card flex column justify-around">
-      <div className="row">
-        <img src={location} className="company-avatar"></img>
-        <div className="name-card w-70">{capitalize(name)}</div>
-        <aside>
-          <div className="price-text right">{`$${price}`}</div>
-        </aside>
+      <div className="row jc-sp ai-c">
+        <div className="flex justify price-text">
+          <img src={location} className="company-avatar mr-1"></img>
+          <div className="">{capitalize(name)}</div>
+        </div>
+        <div className="">
+          <div className="price-text">{`$${price}`}</div>
+        </div>
+        {/* <aside> */}
+        {/* </aside> */}
       </div>
-      <div className="description">{getDescription(description)}</div>
+      {/* <div className="description">{getDescription(description)}</div> */}
+      <div className="description">{description}</div>
       <div className="w-70 flex column">
         <div className="font-bold">Purchase Date</div>
         <div className="font-light">{getDate(purchaseDate)}</div>

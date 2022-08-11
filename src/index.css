@@ -248,8 +248,26 @@ table>tr {
   font-feature-settings: 'tnum'
 }
 
+.mr-1 {
+  margin-right: 10px;
+}
+
 .flex {
   display: flex;
+}
+
+.justify {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jc-sp {
+  justify-content: space-between;
+}
+
+.ai-c {
+  align-items: center;
 }
 
 .column {
@@ -296,6 +314,8 @@ table>tr {
   width: 15%;
   right: 40px;
 }
+
+
 
 @media (max-width: 600px) {
   .table {

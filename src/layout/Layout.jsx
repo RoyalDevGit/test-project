@@ -44,6 +44,7 @@ export default function Layout() {
           })}
         </tbody>
       </table>
+
       <div className="mobile-device" data-testid="mobile-view">
         {data.map((datum, index) => {
           return <Card {...datum} key={index}></Card>;

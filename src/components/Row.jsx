@@ -33,7 +33,7 @@ export default function Row({
       oldString[0],
       oldString[0].toUpperCase()
     );
-    return firstCapital.replace("&#x27;", "'");
+    return firstCapital.replaceAll("&#x27;", "'");
   };
 
   return (
